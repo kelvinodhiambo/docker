@@ -7,7 +7,7 @@ machine:
 
 dependencies:
   post:
-    - docker build -t  f3e4ec80de75 /bin/bash .
+    - docker build -t  f3e4ec80de75 :$CIRCLE_SHA1 .
 
 test:
   post:
