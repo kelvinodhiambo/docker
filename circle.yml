@@ -13,9 +13,4 @@ test:
   post:
     - docker run -d -p 4200:4200 f3e4ec80de75 :$CIRCLE_SHA1; sleep 10
 
-deployment:
-  prod:
-    branch: master
-    commands:
-      chmod +x deploy.sh
-      - ./deploy.sh
+      
